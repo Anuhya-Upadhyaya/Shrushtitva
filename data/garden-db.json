@@ -1,0 +1,830 @@
+{
+  "users": [
+    {
+      "id": "user_anuhya_default",
+      "email": "anuhyaupadhyaya2004@gmail.com",
+      "passwordHash": "d9f55406531660ac28ff179770e6705eac660daf92de17c9570c264db67dfc7c",
+      "name": "Anuhya Upadhyaya",
+      "avatarUrl": "/src/assets/images/gardener_avatar_user_1792637749931.jpg",
+      "preferredLanguage": "en",
+      "locationName": "Bengaluru, Karnataka, India",
+      "climateZone": "Tropical Savanna (Zone 10b / Semi-Arid Balcony)",
+      "gardeningExperience": "intermediate",
+      "createdAt": "2026-10-22T03:09:09.671Z"
+    }
+  ],
+  "plants": [
+    {
+      "id": "plant_monstera_01",
+      "userId": "user_anuhya_default",
+      "nickname": "Monty",
+      "commonName": "Monstera Deliciosa",
+      "scientificName": "Monstera deliciosa",
+      "category": "indoor_houseplant",
+      "primaryPhotoUrl": "/src/assets/images/plant_monstera_deliciosa_1792637748031.jpg",
+      "photos": [
+        {
+          "id": "photo_monstera_1",
+          "url": "/src/assets/images/plant_monstera_deliciosa_1792637748031.jpg",
+          "caption": "Baseline measurement: 9 healthy leaves, strong aerial roots anchored to coir pole.",
+          "date": "2026-09-22",
+          "stage": "vegetative",
+          "context": "baseline"
+        },
+        {
+          "id": "photo_monstera_2",
+          "url": "https://images.unsplash.com/photo-1614594975525-e45190c55d0b?auto=format&fit=crop&w=1000&q=80",
+          "caption": "New cataphyll shoot expanding rapidly toward morning light; terminal bud swelling.",
+          "date": "2026-09-30",
+          "stage": "vegetative",
+          "context": "recovery_milestone"
+        },
+        {
+          "id": "photo_monstera_3",
+          "url": "https://images.unsplash.com/photo-1599598425947-5202edd564c5?auto=format&fit=crop&w=1000&q=80",
+          "caption": "10th leaf unfurling smoothly; fresh lime green color with 4 clear fenestrations.",
+          "date": "2026-10-06",
+          "stage": "vegetative",
+          "context": "recovery_milestone"
+        },
+        {
+          "id": "photo_monstera_4",
+          "url": "https://images.unsplash.com/photo-1628155930542-3c7a64e2c833?auto=format&fit=crop&w=1000&q=80",
+          "caption": "Hardening off of 10th leaf to deep gloss; secondary shoot sheath visible at 59 cm.",
+          "date": "2026-10-14",
+          "stage": "mature",
+          "context": "recovery_milestone"
+        },
+        {
+          "id": "photo_monstera_5",
+          "url": "/src/assets/images/plant_monstera_deliciosa_1792637748031.jpg",
+          "caption": "11th mature leaf fully expanded with 6 distinct splits. Vibrant, dark green crown reached.",
+          "date": "2026-10-22",
+          "stage": "mature",
+          "context": "recovery_milestone"
+        }
+      ],
+      "plantingDate": "2025-06-15",
+      "approximateAge": "16 months",
+      "plantingMethod": "nursery_transplant",
+      "growthStage": "mature",
+      "isIndoor": true,
+      "locationDetails": "Living Room East Window (Gentle Morning Sun)",
+      "potBedDetails": "12-inch Artisan Cream Ceramic Pot with Drainage Saucer",
+      "soilMedium": "Chunky Aroid Mix (Cocopeat, Pine Bark, Perlite, Vermicompost 40:30:15:15)",
+      "sunlightExposure": "bright_indirect",
+      "wateringRoutine": "when_top_dry",
+      "drainageCondition": "excellent_perlite_holes",
+      "knownEnvironmentalConditions": "Moderate indoor humidity (55-65%), temperature 24-29°C",
+      "additionalNotes": "Supported by a coco coir pole. Cleaned aerial roots twice monthly.",
+      "healthStatus": "healthy",
+      "lastAssessedDate": "2026-10-18",
+      "lastWateredDate": "2026-10-19",
+      "createdAt": "2026-08-01T10:00:00Z",
+      "updatedAt": "2026-10-19T14:30:00Z",
+      "assessments": [
+        {
+          "id": "assess_monstera_1",
+          "plantId": "plant_monstera_01",
+          "assessmentDate": "2026-10-18",
+          "photographUrls": [
+            "/src/assets/images/plant_monstera_deliciosa_1792637748031.jpg"
+          ],
+          "observedConditionSummary": "Robust vegetative vigor with deep green turgid foliage and clean split lobes. No visible signs of fungal spotting or mite infestation.",
+          "suspectedFindings": [
+            {
+              "conditionName": "Optimal Growth Condition",
+              "category": "environmental",
+              "probability": "high",
+              "confidencePercentage": 94,
+              "supportingObservations": [
+                "Glossy deep green leaf blades",
+                "Strong aerial root attachment",
+                "No chlorosis or margin necrosis"
+              ],
+              "conflictingOrUnexplainedObservations": [],
+              "similarLookingConditions": [],
+              "distinguishingFeatures": [
+                "Healthy leaf fenestrations"
+              ],
+              "recommendedVerificationSteps": [
+                "Maintain current watering cycle; check soil moisture 2 inches deep before watering"
+              ],
+              "canBeginWithLowRiskCare": true,
+              "urgency": "low",
+              "requiresProfessionalTesting": false
+            }
+          ],
+          "nutrientHypotheses": [],
+          "environmentalFactors": [
+            "Stable indoor microclimate"
+          ],
+          "missingInformation": [],
+          "recommendedTreatments": [],
+          "status": "healthy"
+        }
+      ],
+      "treatmentRecords": [],
+      "followUpRecords": [],
+      "soilTests": [
+        {
+          "id": "soil_monstera_1",
+          "plantId": "plant_monstera_01",
+          "testDate": "2026-09-05",
+          "sampleType": "potting_mix",
+          "laboratoryName": "GKVK University Agricultural Extension Kit",
+          "measuredValues": {
+            "ph": 6.4,
+            "ec": 0.8,
+            "nitrogen_ppm": 140,
+            "phosphorus_ppm": 65,
+            "potassium_ppm": 180,
+            "organicMatterPercent": 6.2
+          },
+          "referenceRangesSource": "ICAR Aroid Potting Substrate Handbook",
+          "interpretation": "Well balanced pH (6.0 - 6.8 range) and optimal organic matter with low electrical conductivity.",
+          "limitations": "Handheld probe analysis; micronutrients not individually quantified."
+        }
+      ],
+      "careTasks": [],
+      "careLogs": [
+        {
+          "id": "log_m_1",
+          "plantId": "plant_monstera_01",
+          "date": "2026-10-19",
+          "activityType": "watering",
+          "quantityApplied": "800 ml filtered water",
+          "notes": "Top 2.5 inches were dry. Drained fully into saucer."
+        }
+      ],
+      "growthMetrics": [
+        {
+          "id": "gm_m_1",
+          "plantId": "plant_monstera_01",
+          "date": "2026-09-22",
+          "heightCm": 53,
+          "leafCount": 9,
+          "stemDiameterMm": 14.5,
+          "milestone": "Baseline monthly measurement",
+          "notes": "Specimen stable on coco coir pole"
+        },
+        {
+          "id": "gm_m_2",
+          "plantId": "plant_monstera_01",
+          "date": "2026-09-26",
+          "heightCm": 53.8,
+          "leafCount": 9,
+          "stemDiameterMm": 14.8,
+          "notes": "Terminal bud swelling with pale green sheath"
+        },
+        {
+          "id": "gm_m_3",
+          "plantId": "plant_monstera_01",
+          "date": "2026-09-30",
+          "heightCm": 55,
+          "leafCount": 9,
+          "stemDiameterMm": 15,
+          "notes": "New cataphyll extending rapidly toward light"
+        },
+        {
+          "id": "gm_m_4",
+          "plantId": "plant_monstera_01",
+          "date": "2026-10-04",
+          "heightCm": 56.4,
+          "leafCount": 10,
+          "stemDiameterMm": 15.2,
+          "milestone": "10th Leaf Unfurled (4 splits)",
+          "notes": "Delicate lime-green leaf unrolled smoothly"
+        },
+        {
+          "id": "gm_m_5",
+          "plantId": "plant_monstera_01",
+          "date": "2026-10-08",
+          "heightCm": 57.6,
+          "leafCount": 10,
+          "stemDiameterMm": 15.5,
+          "notes": "Aerial root tip actively anchoring into substrate"
+        },
+        {
+          "id": "gm_m_6",
+          "plantId": "plant_monstera_01",
+          "date": "2026-10-12",
+          "heightCm": 59.1,
+          "leafCount": 10,
+          "stemDiameterMm": 15.8,
+          "notes": "Stem caliper expansion and second shoot sheath visible"
+        },
+        {
+          "id": "gm_m_7",
+          "plantId": "plant_monstera_01",
+          "date": "2026-10-16",
+          "heightCm": 60.5,
+          "leafCount": 11,
+          "stemDiameterMm": 16,
+          "milestone": "11th Leaf Unfurled (6 splits)",
+          "notes": "Newest leaf hardened off to deep emerald gloss"
+        },
+        {
+          "id": "gm_m_8",
+          "plantId": "plant_monstera_01",
+          "date": "2026-10-19",
+          "heightCm": 61.4,
+          "leafCount": 11,
+          "stemDiameterMm": 16.2,
+          "notes": "Foliar balance excellent, no pest activity"
+        },
+        {
+          "id": "gm_m_9",
+          "plantId": "plant_monstera_01",
+          "date": "2026-10-22",
+          "heightCm": 62.5,
+          "leafCount": 11,
+          "stemDiameterMm": 16.4,
+          "milestone": "Robust mature crown reached",
+          "notes": "Height milestone +9.5 cm in 30 days"
+        }
+      ]
+    },
+    {
+      "id": "plant_tomato_02",
+      "userId": "user_anuhya_default",
+      "nickname": "Ruby Roma",
+      "commonName": "Potted San Marzano Tomato",
+      "scientificName": "Solanum lycopersicum",
+      "category": "vegetable",
+      "primaryPhotoUrl": "/src/assets/images/plant_tomato_blossom_1792637748927.jpg",
+      "photos": [
+        {
+          "id": "photo_tomato_1",
+          "url": "https://images.unsplash.com/photo-1592841200221-a6898f307baa?auto=format&fit=crop&w=1000&q=80",
+          "caption": "Baseline flowering: First healthy yellow blossom clusters on upper balcony trellis.",
+          "date": "2026-09-25",
+          "stage": "flowering",
+          "context": "baseline"
+        },
+        {
+          "id": "photo_tomato_2",
+          "url": "/src/assets/images/plant_tomato_blossom_1792637748927.jpg",
+          "caption": "Early fruiting: Swelling green tomatoes alongside healthy middle canopy.",
+          "date": "2026-10-05",
+          "stage": "fruiting",
+          "context": "recovery_milestone"
+        },
+        {
+          "id": "photo_tomato_symptom",
+          "url": "/src/assets/images/plant_leaf_yellowing_sample_1792637749401.jpg",
+          "caption": "Symptom emergence: Close-up of lower leaf showing prominent interveinal chlorosis (Mg shortfall).",
+          "date": "2026-10-15",
+          "stage": "fruiting",
+          "context": "symptom_assessment"
+        },
+        {
+          "id": "photo_tomato_treatment",
+          "url": "https://images.unsplash.com/photo-1591857177580-dc82b9ac4e17?auto=format&fit=crop&w=1000&q=80",
+          "caption": "Treatment application: Foliar drench with 1% agricultural Epsom salt emulsion in evening.",
+          "date": "2026-10-18",
+          "stage": "fruiting",
+          "context": "treatment_application"
+        },
+        {
+          "id": "photo_tomato_followup",
+          "url": "https://images.unsplash.com/photo-1594282486552-05b4d80fbb9f?auto=format&fit=crop&w=1000&q=80",
+          "caption": "Follow-up recovery: Ripening red fruit cluster, chlorosis arrested, healthy dark green terminal canopy.",
+          "date": "2026-10-22",
+          "stage": "fruiting",
+          "context": "follow_up"
+        }
+      ],
+      "plantingDate": "2026-07-20",
+      "approximateAge": "3 months",
+      "plantingMethod": "seed",
+      "growthStage": "fruiting",
+      "isIndoor": false,
+      "locationDetails": "South Balcony Railing (6+ hours direct sun)",
+      "potBedDetails": "14-inch Terracotta Planter with Bamboo Staking",
+      "soilMedium": "Red garden soil, vermicompost, river sand, neem cake (40:40:10:10)",
+      "sunlightExposure": "direct_full_sun",
+      "wateringRoutine": "daily",
+      "drainageCondition": "adequate",
+      "knownEnvironmentalConditions": "Warm afternoon temperatures (31°C), breezy balcony",
+      "additionalNotes": "Set heavy fruit clusters 2 weeks ago. Older lower leaves started showing pale yellow blotches between veins.",
+      "healthStatus": "under_treatment",
+      "lastAssessedDate": "2026-10-16",
+      "lastWateredDate": "2026-10-22",
+      "createdAt": "2026-07-20T08:00:00Z",
+      "updatedAt": "2026-10-22T03:23:44.009Z",
+      "assessments": [
+        {
+          "id": "assess_tomato_1",
+          "plantId": "plant_tomato_02",
+          "assessmentDate": "2026-10-16",
+          "photographUrls": [
+            "/src/assets/images/plant_tomato_blossom_1792637748927.jpg",
+            "/src/assets/images/plant_leaf_yellowing_sample_1792637749401.jpg"
+          ],
+          "observedConditionSummary": "Fruiting tomato plant exhibiting distinct interveinal chlorosis (yellowing between green veins) primarily on mature lower and middle leaves, accompanied by mild margin browning. Upper new shoots and fruit clusters remain firm.",
+          "suspectedFindings": [
+            {
+              "conditionName": "Magnesium Deficiency (Translocation during Fruiting)",
+              "category": "nutrient",
+              "probability": "high",
+              "confidencePercentage": 86,
+              "supportingObservations": [
+                "Interveinal chlorosis localized to older/middle leaves while veins remain green",
+                "High nutrient demand due to heavy ripening tomato fruit set",
+                "No water-soaked spots, fungal spores, or bacterial ooze present"
+              ],
+              "conflictingOrUnexplainedObservations": [
+                "Slight margin crisping could indicate potassium shortfall or transient dry spells"
+              ],
+              "similarLookingConditions": [
+                "Iron deficiency (affects newest leaves first, not older leaves)",
+                "Early Blight (displays concentric target rings, absent here)"
+              ],
+              "distinguishingFeatures": [
+                "Magnesium is mobile in plant tissue, moving from older leaves to support developing fruit"
+              ],
+              "recommendedVerificationSteps": [
+                "Inspect undersides of leaves with 10x hand lens to rule out two-spotted spider mites",
+                "Verify soil pH (Mg uptake is blocked if pH drops below 6.0)"
+              ],
+              "canBeginWithLowRiskCare": true,
+              "urgency": "moderate",
+              "requiresProfessionalTesting": false
+            }
+          ],
+          "nutrientHypotheses": [
+            {
+              "nutrient": "Magnesium (Mg)",
+              "status": "suspected_deficiency",
+              "visualSymptoms": [
+                "Interveinal chlorosis starting on older leaves",
+                "Preserved dark green veins with yellow lamina"
+              ],
+              "alternativeExplanations": [
+                "High potassium fertilization competitively inhibiting magnesium root uptake"
+              ],
+              "consequencesIfUnresolved": [
+                "Premature defoliation of lower leaves reducing photosynthetic yield and sun-scalding fruits"
+              ],
+              "verificationMethod": "Foliar trial response: if spray corrects yellowing on newly expanding leaves within 7 days, deficiency is confirmed",
+              "correctiveOptions": [
+                "Homemade Epsom Salt (Magnesium Sulfate) foliar spray (10g / 1 Litre water)",
+                "Top-dressing with well-cured compost and a pinch of dolomitic lime"
+              ],
+              "safetyPrecautions": [
+                "Do not exceed 1% concentration to prevent foliar salt burn; apply in late afternoon when sun is low"
+              ],
+              "indicatorsToMonitor": [
+                "Arresting of yellowing progression towards upper canopy",
+                "Vibrant dark green color in new vegetative flushes"
+              ]
+            }
+          ],
+          "environmentalFactors": [
+            "Intense midday sun on balcony",
+            "Daily irrigation leaching soluble salts"
+          ],
+          "missingInformation": [
+            "Exact pH of current runoff water"
+          ],
+          "recommendedTreatments": [
+            {
+              "id": "treat_epsom_01",
+              "name": "Gentle Epsom Salt (Magnesium Sulfate) Foliar Remedy",
+              "category": "homemade_remedy",
+              "targetProblem": "Fruiting-stage Magnesium Chlorosis",
+              "reasonForChoosing": "Fastest cellular absorption via leaf stomata during active fruit maturation at minimal cost.",
+              "evidenceBasis": "University Agricultural Extension recommendations for Solanaceous balcony vegetables.",
+              "ingredientsOrProduct": [
+                "10 grams (approx. 2 teaspoons) agricultural/pharmacy grade Epsom Salt (MgSO4)",
+                "1 Litre lukewarm clean water",
+                "2 drops mild organic dish soap as wetting agent"
+              ],
+              "preparationSteps": [
+                "1. Dissolve 10g Epsom salt into 100ml warm water until crystals dissolve completely.",
+                "2. Dilute to a full 1 Litre with room-temperature water.",
+                "3. Add 2 drops of mild liquid soap and gently swirl to reduce surface tension."
+              ],
+              "dilutionRatio": "1% solution (10g per 1000ml)",
+              "applicationMethod": "foliar_spray",
+              "applicationLocation": "underside_and_top_of_leaves",
+              "frequency": "Once every 7 days for 2 cycles",
+              "duration": "14 days total",
+              "expectedResponseTimeframe": "5 to 8 days",
+              "approximateCost": "₹15 ($0.18) for two applications",
+              "costCalculationDetails": "100g pharmaceutical Epsom salt box costs ₹30 at local pharmacy; 20g used = ₹6; tap water negligible.",
+              "safetyPrecautions": [
+                "Spray only after 5:30 PM when direct sunlight has subsided to prevent lens-effect leaf scorching.",
+                "Test on two lower leaves 24 hours prior to full canopy spraying."
+              ],
+              "potentialPlantDamage": "Over-concentration (>2%) can induce marginal salt scorch.",
+              "risksToPeoplePetsPollinators": "Completely safe for pets, bees, and earthworms; non-toxic mineral salt.",
+              "protectiveEquipment": [
+                "Basic clean spray bottle, wash hands after application"
+              ],
+              "contraindications": [
+                "Do not apply during high heat above 35°C or to severely wilted drought-stressed plants before watering."
+              ],
+              "followUpInstructions": "Inspect foliage at Day 7. Yellowed old leaves will not fully regreen, but new leaves should emerge healthy dark green."
+            }
+          ],
+          "status": "under_treatment"
+        }
+      ],
+      "treatmentRecords": [
+        {
+          "id": "rec_tomato_1",
+          "plantId": "plant_tomato_02",
+          "recommendationId": "treat_epsom_01",
+          "appliedDate": "2026-10-17",
+          "appliedTime": "17:45",
+          "productOrIngredients": [
+            "Epsom Salt (MgSO4)",
+            "Tap water",
+            "1 drop liquid soap"
+          ],
+          "actualQuantityApplied": "450 ml foliar mist",
+          "actualDilutionDetails": "10g dissolved into 1000ml (used half the batch on tomato, half on neighboring pepper)",
+          "applicationMethod": "Fine mist spray targeting undersides and upper surfaces",
+          "reasonForTreatment": "Interveinal yellowing on middle leaf canopy during fruit swell",
+          "actualCostPaid": "₹15",
+          "notes": "Weather was calm, 26°C evening. Plant absorbed mist smoothly without runoff.",
+          "photoUrl": "/src/assets/images/plant_leaf_yellowing_sample_1792637749401.jpg",
+          "expectedFollowUpDate": "2026-10-24",
+          "isCompleted": true
+        }
+      ],
+      "followUpRecords": [],
+      "soilTests": [],
+      "careTasks": [
+        {
+          "id": "task_tomato_followup",
+          "plantId": "plant_tomato_02",
+          "plantName": "Ruby Roma (Tomato)",
+          "taskType": "treatment_follow_up",
+          "title": "Assess Epsom Salt foliar response (Check new growth color)",
+          "dueDate": "2026-10-24",
+          "isCompleted": false,
+          "notes": "Compare current leaf condition against baseline photo. Look for absence of chlorosis on top flushes."
+        },
+        {
+          "id": "task_tomato_water",
+          "plantId": "plant_tomato_02",
+          "plantName": "Ruby Roma (Tomato)",
+          "taskType": "watering",
+          "title": "Morning deep watering (Ensure even soil hydration to prevent blossom end rot)",
+          "dueDate": "2026-10-22",
+          "isCompleted": true,
+          "recurrenceDays": 1
+        }
+      ],
+      "careLogs": [
+        {
+          "id": "log_1792639424009",
+          "plantId": "plant_tomato_02",
+          "date": "2026-10-22",
+          "activityType": "watering",
+          "quantityApplied": "800 ml",
+          "notes": "Completed scheduled daily/routine watering."
+        },
+        {
+          "id": "log_t_1",
+          "plantId": "plant_tomato_02",
+          "date": "2026-10-17",
+          "activityType": "treatment",
+          "quantityApplied": "450ml foliar spray",
+          "notes": "Applied first cycle of Epsom Salt spray at 5:45 PM."
+        },
+        {
+          "id": "log_t_2",
+          "plantId": "plant_tomato_02",
+          "date": "2026-10-21",
+          "activityType": "watering",
+          "quantityApplied": "1.2 Litres",
+          "notes": "Soil was dry to 1 inch depth. Watered until minor seep through bottom hole."
+        }
+      ],
+      "growthMetrics": [
+        {
+          "id": "gm_t_1",
+          "plantId": "plant_tomato_02",
+          "date": "2026-09-22",
+          "heightCm": 28,
+          "leafCount": 18,
+          "stemDiameterMm": 8,
+          "milestone": "Vegetative growth baseline",
+          "notes": "Active internode elongation under full balcony sun"
+        },
+        {
+          "id": "gm_t_2",
+          "plantId": "plant_tomato_02",
+          "date": "2026-09-25",
+          "heightCm": 30.5,
+          "leafCount": 20,
+          "stemDiameterMm": 8.5,
+          "notes": "Apical shoot vigorous"
+        },
+        {
+          "id": "gm_t_3",
+          "plantId": "plant_tomato_02",
+          "date": "2026-09-29",
+          "heightCm": 33.2,
+          "leafCount": 23,
+          "stemDiameterMm": 9.1,
+          "milestone": "First floral cluster budding",
+          "notes": "Clusters of 6 yellow buds observed"
+        },
+        {
+          "id": "gm_t_4",
+          "plantId": "plant_tomato_02",
+          "date": "2026-10-03",
+          "heightCm": 36,
+          "leafCount": 26,
+          "stemDiameterMm": 9.8,
+          "milestone": "Full blossom bloom",
+          "notes": "Gentle manual vibration for pollen transfer"
+        },
+        {
+          "id": "gm_t_5",
+          "plantId": "plant_tomato_02",
+          "date": "2026-10-07",
+          "heightCm": 38.8,
+          "leafCount": 28,
+          "stemDiameterMm": 10.4,
+          "milestone": "Fruit set: 4 green berries",
+          "notes": "Added bamboo trellis support for weight"
+        },
+        {
+          "id": "gm_t_6",
+          "plantId": "plant_tomato_02",
+          "date": "2026-10-11",
+          "heightCm": 41.2,
+          "leafCount": 30,
+          "stemDiameterMm": 11,
+          "notes": "Lower canopy displaying interveinal chlorosis"
+        },
+        {
+          "id": "gm_t_7",
+          "plantId": "plant_tomato_02",
+          "date": "2026-10-15",
+          "heightCm": 43,
+          "leafCount": 32,
+          "stemDiameterMm": 11.5,
+          "milestone": "Epsom salt foliar remedy applied",
+          "notes": "Targeted magnesium translocation"
+        },
+        {
+          "id": "gm_t_8",
+          "plantId": "plant_tomato_02",
+          "date": "2026-10-18",
+          "heightCm": 44.5,
+          "leafCount": 33,
+          "stemDiameterMm": 11.8,
+          "notes": "Fruit cluster swelling rapidly to walnut size"
+        },
+        {
+          "id": "gm_t_9",
+          "plantId": "plant_tomato_02",
+          "date": "2026-10-22",
+          "heightCm": 45.8,
+          "leafCount": 34,
+          "stemDiameterMm": 12,
+          "milestone": "Heavy fruit set secured",
+          "notes": "Height gain +17.8 cm, fruit weight stabilizing"
+        }
+      ]
+    },
+    {
+      "id": "plant_tulsi_03",
+      "userId": "user_anuhya_default",
+      "nickname": "Shyama Tulsi",
+      "commonName": "Holy Basil (Krishna Tulsi)",
+      "scientificName": "Ocimum tenuiflorum",
+      "category": "herb",
+      "photos": [
+        {
+          "id": "photo_tulsi_1",
+          "url": "/src/assets/images/hero_botanical_garden_1792637746803.jpg",
+          "caption": "Baseline holy basil cutting in terracotta planter on terrace altar.",
+          "date": "2026-09-28",
+          "stage": "vegetative",
+          "context": "baseline"
+        },
+        {
+          "id": "photo_tulsi_2",
+          "url": "https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?auto=format&fit=crop&w=1000&q=80",
+          "caption": "Pinched nascent flower spikes to stimulate bushier lateral branching.",
+          "date": "2026-10-10",
+          "stage": "vegetative",
+          "context": "treatment_application"
+        },
+        {
+          "id": "photo_tulsi_3",
+          "url": "https://images.unsplash.com/photo-1518531933037-91b2f5f229cc?auto=format&fit=crop&w=1000&q=80",
+          "caption": "Dense aromatic canopy with deep purple-tinted foliage flourishing in morning sunlight.",
+          "date": "2026-10-21",
+          "stage": "vegetative",
+          "context": "recovery_milestone"
+        }
+      ],
+      "plantingDate": "2026-04-10",
+      "approximateAge": "6 months",
+      "plantingMethod": "cutting",
+      "growthStage": "vegetative",
+      "isIndoor": false,
+      "locationDetails": "East Terrace Altar (Full Sun & Fresh Air)",
+      "potBedDetails": "Traditional 10-inch Painted Clay Pot",
+      "soilMedium": "Red loam, cow dung manure, compost (50:30:20)",
+      "sunlightExposure": "direct_full_sun",
+      "wateringRoutine": "daily",
+      "drainageCondition": "adequate",
+      "knownEnvironmentalConditions": "Warm tropical outdoor terrace",
+      "additionalNotes": "Punched flower heads weekly to stimulate dense bushy lateral branching.",
+      "healthStatus": "healthy",
+      "lastAssessedDate": "2026-10-12",
+      "lastWateredDate": "2026-10-21",
+      "createdAt": "2026-04-10T06:00:00Z",
+      "updatedAt": "2026-10-21T07:00:00Z",
+      "assessments": [],
+      "treatmentRecords": [],
+      "followUpRecords": [],
+      "soilTests": [],
+      "careTasks": [
+        {
+          "id": "task_tulsi_pinch",
+          "plantId": "plant_tulsi_03",
+          "plantName": "Shyama Tulsi",
+          "taskType": "pruning",
+          "title": "Pinch nascent flower spikes (manjaris) to promote bushiness",
+          "dueDate": "2026-10-23",
+          "isCompleted": false,
+          "recurrenceDays": 7
+        }
+      ],
+      "careLogs": [],
+      "growthMetrics": [
+        {
+          "id": "gm_tu_1",
+          "plantId": "plant_tulsi_03",
+          "date": "2026-09-22",
+          "heightCm": 24,
+          "leafCount": 42,
+          "stemDiameterMm": 5.2,
+          "milestone": "Post-transplant baseline",
+          "notes": "Fragrant purple-green foliage"
+        },
+        {
+          "id": "gm_tu_2",
+          "plantId": "plant_tulsi_03",
+          "date": "2026-09-26",
+          "heightCm": 25.6,
+          "leafCount": 47,
+          "stemDiameterMm": 5.5,
+          "notes": "Pinched apical tips to stimulate lateral branching"
+        },
+        {
+          "id": "gm_tu_3",
+          "plantId": "plant_tulsi_03",
+          "date": "2026-09-30",
+          "heightCm": 27.2,
+          "leafCount": 54,
+          "stemDiameterMm": 5.9,
+          "milestone": "Prolific lateral shoot proliferation",
+          "notes": "4 new side branches developed"
+        },
+        {
+          "id": "gm_tu_4",
+          "plantId": "plant_tulsi_03",
+          "date": "2026-10-05",
+          "heightCm": 29,
+          "leafCount": 62,
+          "stemDiameterMm": 6.4,
+          "notes": "Thick woody base forming at soil level"
+        },
+        {
+          "id": "gm_tu_5",
+          "plantId": "plant_tulsi_03",
+          "date": "2026-10-10",
+          "heightCm": 30.5,
+          "leafCount": 69,
+          "stemDiameterMm": 6.8,
+          "notes": "Intense eugenol aroma, leaves crisp and turgid"
+        },
+        {
+          "id": "gm_tu_6",
+          "plantId": "plant_tulsi_03",
+          "date": "2026-10-16",
+          "heightCm": 32,
+          "leafCount": 74,
+          "stemDiameterMm": 7.1,
+          "milestone": "Floral raceme buds emerging",
+          "notes": "Slender flower spikes initiated"
+        },
+        {
+          "id": "gm_tu_7",
+          "plantId": "plant_tulsi_03",
+          "date": "2026-10-22",
+          "heightCm": 33.5,
+          "leafCount": 79,
+          "stemDiameterMm": 7.3,
+          "milestone": "Full sacred canopy established",
+          "notes": "Dense hemispherical bush, +9.5 cm growth"
+        }
+      ]
+    }
+  ],
+  "careTasks": [
+    {
+      "id": "task_tomato_followup",
+      "plantId": "plant_tomato_02",
+      "plantName": "Ruby Roma (Tomato)",
+      "taskType": "treatment_follow_up",
+      "title": "Assess Epsom Salt foliar response (Check new growth color)",
+      "dueDate": "2026-10-24",
+      "isCompleted": false,
+      "notes": "Compare current leaf condition against baseline photo. Look for absence of chlorosis on top flushes."
+    },
+    {
+      "id": "task_tomato_water",
+      "plantId": "plant_tomato_02",
+      "plantName": "Ruby Roma (Tomato)",
+      "taskType": "watering",
+      "title": "Morning deep watering (Ensure even soil hydration to prevent blossom end rot)",
+      "dueDate": "2026-10-22",
+      "isCompleted": false,
+      "recurrenceDays": 1
+    },
+    {
+      "id": "task_tulsi_pinch",
+      "plantId": "plant_tulsi_03",
+      "plantName": "Shyama Tulsi",
+      "taskType": "pruning",
+      "title": "Pinch nascent flower spikes (manjaris) to promote bushiness",
+      "dueDate": "2026-10-23",
+      "isCompleted": false,
+      "recurrenceDays": 7
+    }
+  ],
+  "careLogs": [
+    {
+      "id": "log_m_1",
+      "plantId": "plant_monstera_01",
+      "date": "2026-10-19",
+      "activityType": "watering",
+      "quantityApplied": "800 ml filtered water",
+      "notes": "Top 2.5 inches were dry. Drained fully into saucer."
+    },
+    {
+      "id": "log_t_1",
+      "plantId": "plant_tomato_02",
+      "date": "2026-10-17",
+      "activityType": "treatment",
+      "quantityApplied": "450ml foliar spray",
+      "notes": "Applied first cycle of Epsom Salt spray at 5:45 PM."
+    },
+    {
+      "id": "log_t_2",
+      "plantId": "plant_tomato_02",
+      "date": "2026-10-21",
+      "activityType": "watering",
+      "quantityApplied": "1.2 Litres",
+      "notes": "Soil was dry to 1 inch depth. Watered until minor seep through bottom hole."
+    }
+  ],
+  "chatHistory": {
+    "user_anuhya_default": [
+      {
+        "id": "chat_welcome",
+        "role": "assistant",
+        "content": "Namaste! I am your Shrushtitva botanical companion. I have access to your garden records—including Monty the Monstera, Ruby Roma the Tomato, and your Krishna Tulsi. How can I help your plants flourish today?",
+        "timestamp": "2026-10-21T08:00:00Z",
+        "suggestedActions": [
+          {
+            "label": "Review Ruby Roma tomato treatment",
+            "actionType": "view_plant",
+            "payload": {
+              "plantId": "plant_tomato_02"
+            }
+          },
+          {
+            "label": "Check today’s watering schedule",
+            "actionType": "schedule_task"
+          }
+        ]
+      },
+      {
+        "id": "chat_u_1792639766351",
+        "role": "user",
+        "content": "How do I brew aerated compost tea for nutrients?",
+        "timestamp": "2026-10-22T03:29:26.351Z"
+      },
+      {
+        "id": "chat_a_1792639766351",
+        "role": "assistant",
+        "content": "Brewing **Actively Aerated Compost Tea (AACT)** is one of the most effective, budget-friendly ways to supercharge your plants with beneficial microbes and gentle, readily available nutrients. \n\nUnlike plain compost leachate (which simply leaches runoff), aerated tea uses an air pump to brew living aerobic microbes (beneficial bacteria and fungi) that boost root health and nutrient absorption.\n\nHere is a simple, cost-effective recipe you can brew on your terrace or balcony:\n\n---\n\n### **Materials Needed**\n1. **A 10–15 liter bucket.**\n2. **Aquarium air pump with an air stone** (a standard dual-outlet aquarium bubbler costs around ₹250–₹400).\n3. **Compost:** 2 to 3 cups of well-cured, dark vermicompost or mature kitchen compost (smells like clean forest soil).\n4. **Microbe food:** 1 tablespoon of unsulfured **jaggery (*gud*)** or blackstrap molasses dissolved in a little warm water.\n5. **Brewing bag:** A fine mesh paint strainer, an old clean cotton pillowcase, or nylon stockings.\n6. **Water:** 8–10 liters of **non-chlorinated water**. \n   * *Bengaluru tip:* If using Cauvery or municipal tap water, let it sit out in an open bucket for 24 hours so the chlorine evaporates, as chlorine kills the good bacteria you are trying to breed.\n\n---\n\n### **Step-by-Step Brewing Guide**\n\n1. **Set Up the Aerator:** Place the air stone at the bottom of your bucket filled with dechlorinated water and plug in the pump. You should see vigorous bubbling.\n2. **Add Microbe Food:** Stir in your dissolved jaggery. This supplies the simple sugars that awaken and multiply beneficial aerobic bacteria.\n3. **Pack the Tea Bag:** Place the compost into the cotton cloth or mesh bag, tie it securely, and submerge it in the bubbling water (like a giant tea bag).\n4. **Brew for 24 to 36 Hours:** Let it bubble continuously in a shaded, warm spot (like your shaded utility area or a covered corner of the terrace).\n5. **The \"Sniff Test\":** \n   * **Good brew:** Smells deeply sweet, fresh, and earthy, with a light frothy foam on top.\n   * **Bad brew:** If it ever smells foul, sour, or like rotten eggs, it went anaerobic (lacked oxygen). If this happens, discard it onto bare soil away from potted plants and do not use it on your pots.\n\n---\n\n### **How to Apply It to Your Garden**\n\n> ⚠️ **Golden Rule:** Aerated compost tea is full of living aerobic organisms. Use it within **4 to 6 hours** of turning off the air pump before the oxygen depletes.\n\n* **For Ruby Roma (San Marzano Tomato):**\n  * Since she is actively fruiting and currently under treatment, give her a gentle **root drench** (about 500 ml around the base). The microbes will help unlock phosphorus and potassium in the potting mix to support fruit development without the risk of synthetic fertilizer burn.\n* **For Shyama Tulsi (Terrace Altar):**\n  * Water the soil directly with 250–300 ml once every 2–3 weeks. Tulsi responds wonderfully to vermicompost-based brews with lush, aromatic leaf growth.\n* **For Monty (Monstera Deliciosa):**\n  * Dilute the tea 1:1 with clean water and water until slightly damp when his top 2–3 inches of soil dry out. It enriches his potting mix without causing mineral salt buildup.\n\n---\n\n### **Suggested Next Action**\nBefore feeding **Ruby Roma**, check her current treatment status: if her active treatment involves a foliar application, it’s best to keep this compost tea purely as a **soil drench** at the base to keep her foliage dry and free from excess moisture. \n\nWould you like to log this as a scheduled organic feed for your upcoming weekend routine?",
+        "timestamp": "2026-10-22T03:29:26.351Z"
+      }
+    ]
+  }
+}

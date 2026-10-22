@@ -1,0 +1,1065 @@
+# SHRUSHTITVA — COMPLETE APPLICATION DEVELOPMENT MASTER PROMPT
+
+## 1. YOUR ROLE AND OBJECTIVE
+
+Act as an expert full-stack software engineer, product architect, AI/ML engineer, plant-health specialist, UI/UX designer, database engineer, security engineer, and quality-assurance engineer.
+
+Your task is to design and build **Shrushtitva**, an intelligent, personalized plant-care application that helps people understand their plants, identify possible health problems, determine likely causes, find effective and affordable treatments, and monitor whether their plants actually improve.
+
+Build a complete, functional application rather than a static design, a landing page, or a collection of disconnected screens.
+
+The application should connect plant management, image-based assessment, disease identification, nutrient analysis, treatment recommendations, care scheduling, treatment history, progress monitoring, and an AI gardening assistant into one coherent system.
+
+The application must support people who already own plants and want to assess their current condition, as well as people who are starting new plants from seeds, cuttings, or transplants.
+
+Do not focus disproportionately on visual effects or 3D rendering. A beautiful interface is important, but its purpose is to make useful plant-care functionality easier to understand and use.
+
+---
+
+# 2. THE CORE PURPOSE OF SHRUSHTITVA
+
+Shrushtitva must help users answer six fundamental questions:
+
+1. What is happening to my plant?
+2. What is the most likely reason?
+3. How can I verify the cause?
+4. What is the cheapest effective and safe way to address it?
+5. Exactly how should I apply the recommended treatment?
+6. How can I determine whether the treatment worked?
+
+The application must support this complete cycle:
+
+**Add plant → Assess condition → Identify possible causes → Verify findings where necessary → Recommend treatment → Record treatment → Schedule follow-up → Compare results → Reassess if necessary.**
+
+Every plant must have its own identity, observations, photographs, diagnosis records, care schedule, treatment history, and progress timeline.
+
+The application must not simply provide generic gardening articles. It should use the information available about each individual plant to provide relevant guidance.
+
+---
+
+# 3. UNDERSTAND THE USER AND THEIR GARDEN
+
+Design the application for ordinary plant owners, home gardeners, students, balcony gardeners, terrace gardeners, indoor-plant enthusiasts, and people growing vegetables, herbs, flowers, shrubs, and trees.
+
+Users may have little or no technical gardening knowledge.
+
+Use clear, practical language and explain unfamiliar botanical terms.
+
+The application should work for beginners without preventing experienced gardeners from entering detailed observations, test results, or growing information.
+
+A user must be able to manage many plants, including different species and plants with different health conditions.
+
+Do not impose an artificial one-plant limit.
+
+Do not assume that the user knows a plant's scientific name, nutrient deficiency, disease, soil composition, or ideal watering schedule.
+
+Ask for missing information when it materially affects the advice.
+
+---
+
+# 4. USER ACCOUNTS AND AUTHENTICATION
+
+Implement a complete account system.
+
+Include:
+
+- Sign up.
+- Sign in.
+- Sign out.
+- Password reset.
+- Session persistence.
+- Email verification where supported.
+- Appropriate validation and error messages.
+- Protected application pages.
+- Account settings.
+- Account deletion and associated data handling.
+
+If an existing project already has a sign-in screen, preserve its appearance and working functionality while connecting it to real authentication.
+
+Do not simulate authentication by simply changing a frontend variable.
+
+Each user's garden and private records must remain isolated.
+
+Use appropriate authentication, authorization, database access policies, and private file storage.
+
+Never expose privileged API keys or database credentials in frontend code.
+
+---
+
+# 5. MY GARDEN — CENTRAL PLANT MANAGEMENT
+
+Create a dedicated My Garden dashboard where users can view and manage all their plants.
+
+## 5.1 Add a plant
+
+Allow users to create a plant record with as many of the following details as are relevant:
+
+- Plant nickname.
+- Common name.
+- Scientific name, if known.
+- Plant photograph.
+- Plant category.
+- Planting date or approximate age.
+- Planting method.
+- Growth stage.
+- Indoor or outdoor location.
+- Garden, balcony, terrace, room, or other location.
+- Pot or planting-bed details.
+- Soil or growing medium.
+- Sunlight exposure.
+- Watering routine.
+- Fertilizer history.
+- Drainage conditions.
+- Known environmental conditions.
+- Additional notes.
+
+Most fields should be optional when the information is unknown.
+
+Support manual entry and image-assisted plant identification.
+
+If the system cannot identify the species confidently, allow the user to continue with an unidentified or partially identified plant record.
+
+Never force the user to start over simply because a plant's species is unknown.
+
+## 5.2 Plant cards
+
+Display useful information on each plant card:
+
+- Plant name.
+- Species, if known.
+- Plant photograph.
+- Optional species-specific 3D preview.
+- Current assessment status.
+- Recent observations.
+- Upcoming care tasks.
+- Important alerts.
+- Last update.
+
+Provide actions to open the plant profile, record care, assess symptoms, and edit plant details.
+
+## 5.3 Garden organization
+
+Include:
+
+- Search by plant name or species.
+- Filtering by plant category.
+- Filtering by health or assessment status.
+- Filtering by upcoming care tasks.
+- Sorting by name or recent activity.
+- Useful grouping options.
+- Add, edit, archive, restore, and delete actions.
+- Confirmation before destructive operations.
+
+Persist changes across refreshes and sessions.
+
+Each plant must have a stable unique identifier. All associated records must remain connected to the correct plant.
+
+---
+
+# 6. INDIVIDUAL PLANT PROFILE
+
+Every plant needs its own detailed profile.
+
+Include the following sections:
+
+### Plant overview
+Show the plant's name, species, photographs, planting details, location, growing conditions, and current growth stage.
+
+### Health overview
+Show the latest assessment, suspected problems, relevant symptoms, confidence or uncertainty, and recommended next actions.
+
+### Diagnosis
+Show current and historical assessments, likely causes, supporting observations, alternative explanations, and suggested verification steps.
+
+### Nutrients and soil
+Show suspected deficiencies, available soil or tissue test results, nutrient interpretations, and corrective recommendations.
+
+### Treatment plan
+Show the selected remedy, preparation instructions, dosage when supported, application method, schedule, precautions, cost, and follow-up date.
+
+### Care history
+Show dated watering, fertilizer, pruning, repotting, treatment, and other recorded activities.
+
+### Progress timeline
+Show photographs, observations, diagnoses, treatments, and follow-up outcomes in chronological order.
+
+### Care calendar
+Show upcoming tasks and reminders for this plant.
+
+### Notes
+Allow users to record additional observations.
+
+### Optional 3D view
+Display a species-appropriate animated 3D representation alongside the actual photograph. This is an enhancement, not a replacement for the core plant-health functionality.
+
+The profile must clearly distinguish measured information, user-entered observations, AI-generated hypotheses, and confirmed findings.
+
+---
+
+# 7. PLANT HEALTH ASSESSMENT — A CORE FEATURE
+
+Build a guided assessment workflow that works for plants users already own.
+
+A user should be able to select any plant, upload photographs, describe symptoms, and request a health assessment.
+
+The assessment should consider:
+
+- Overall visible plant condition.
+- Leaf discoloration.
+- Leaf spots and lesions.
+- Wilting.
+- Leaf curling or deformation.
+- Unusual growth.
+- Leaf loss.
+- Root or stem problems when observable or described.
+- Visible insects and pest damage.
+- Flowering or fruiting problems.
+- Possible disease.
+- Potential nutrient deficiency or excess.
+- Watering problems.
+- Soil and drainage issues.
+- Light, temperature, and environmental stress.
+- Physical damage.
+- Other plausible causes.
+
+## Assessment inputs
+
+Allow users to provide:
+
+- Whole-plant photographs.
+- Close-up photographs.
+- Multiple views.
+- Short videos where supported.
+- Text descriptions.
+- Voice descriptions.
+- Species information.
+- Plant age and growth stage.
+- Watering and fertilization history.
+- Soil information.
+- Recent environmental changes.
+- Previous treatment records.
+
+Ask targeted follow-up questions when needed.
+
+For example:
+
+- When did the symptoms begin?
+- Are old leaves or young leaves affected?
+- Is the problem spreading?
+- Is the soil frequently wet?
+- Have you recently applied fertilizer or a treatment?
+- Are pests visible on the plant?
+
+Do not ask irrelevant questions or overwhelm the user with a long questionnaire when only a few details are needed.
+
+## Assessment output
+
+For each assessment, provide:
+
+1. A concise summary of the plant's observed condition.
+2. The most plausible causes, ranked when evidence permits.
+3. The observations supporting each possible cause.
+4. Alternative explanations.
+5. The level of confidence justified by the evidence.
+6. Missing information.
+7. Recommended verification steps.
+8. Appropriate next actions.
+9. Urgency and safety considerations.
+10. A record saved to the plant's history.
+
+Do not claim that an image-based assessment is a laboratory-confirmed diagnosis.
+
+If evidence is insufficient, explicitly say that the cause remains uncertain.
+
+---
+
+# 8. DISEASE AND PEST IDENTIFICATION
+
+Investigate potential plant-health problems, including:
+
+- Fungal diseases.
+- Bacterial diseases.
+- Viral diseases.
+- Insect pests.
+- Mites and other relevant pests.
+- Root and stem problems.
+- Environmental stress.
+- Nutrient-related disorders.
+- Other plausible plant-health conditions.
+
+For each suspected condition, explain:
+
+- What it is.
+- Why it may affect the plant.
+- Which symptoms support the suspicion.
+- Which symptoms do not fit or remain unknown.
+- Other conditions that could look similar.
+- How to distinguish between plausible causes.
+- What additional evidence or tests could help.
+- Whether treatment can reasonably begin with low-risk care adjustments.
+- When professional advice is appropriate.
+
+Prioritize safe, evidence-supported actions.
+
+Do not automatically recommend a pesticide, fungicide, or other chemical product when the cause is uncertain.
+
+For serious, rapidly spreading, or potentially regulated plant diseases, explain when expert assessment or laboratory testing may be needed.
+
+---
+
+# 9. NUTRIENT DEFICIENCY AND SOIL ANALYSIS
+
+Provide a dedicated nutrient-analysis feature.
+
+Investigate relevant nutrients, including:
+
+- Nitrogen.
+- Phosphorus.
+- Potassium.
+- Calcium.
+- Magnesium.
+- Sulfur.
+- Iron.
+- Manganese.
+- Zinc.
+- Copper.
+- Boron.
+- Molybdenum.
+- Other relevant nutrients when appropriate.
+
+For each suspected deficiency or excess, explain:
+
+- Nutrient name.
+- Possible symptoms.
+- Why the deficiency or excess is suspected.
+- Alternative explanations.
+- Potential consequences if unresolved.
+- Appropriate verification methods.
+- Corrective options.
+- Relevant safety precautions.
+- Indicators to monitor after treatment.
+
+## Critical measurement rule
+
+Do not infer exact nutrient concentrations or exact depletion quantities from a photograph.
+
+Visual symptoms may suggest a possible deficiency, but they cannot reliably establish the exact nutrient concentration in the soil or plant tissue.
+
+If the user provides a reliable test result, store:
+
+- Nutrient name.
+- Measured value.
+- Units.
+- Sample type.
+- Test date.
+- Test method, if known.
+- Relevant reference range and source.
+- Interpretation and limitations.
+
+Distinguish clearly between measured values, estimates, and visual hypotheses.
+
+When measurements are unavailable, state that the nutrient level is unknown and recommend an appropriate test if it would materially improve the decision.
+
+Do not fabricate soil-test results, nutrient concentrations, or scientific reference ranges.
+
+---
+
+# 10. AFFORDABLE TREATMENTS AND HOMEMADE REMEDIES
+
+This is one of the most important features of Shrushtitva.
+
+The application should help users find the cheapest effective and safe remedy for the suspected problem.
+
+Consider the following options:
+
+1. Low-cost changes to watering, light, drainage, or other growing conditions.
+2. Safe homemade remedies where reliable evidence supports their use.
+3. Affordable commercial treatments when necessary.
+4. Professional testing or intervention when simpler measures are unsuitable.
+
+Do not assume homemade remedies are automatically effective, harmless, or preferable.
+
+## Every treatment recommendation should include
+
+- Treatment name.
+- Problem being addressed.
+- Reason for choosing it.
+- Evidence supporting its use.
+- Ingredients or commercial product.
+- Exact preparation steps where established.
+- Ingredient quantities and units where supported.
+- Dilution ratio where applicable.
+- Application method.
+- Application location.
+- Frequency.
+- Duration.
+- Expected response timeframe.
+- Approximate total cost.
+- Cost calculation or assumptions.
+- Safety precautions.
+- Potential plant damage.
+- Risks to people, pets, beneficial insects, and the environment.
+- Relevant protective equipment.
+- Situations in which the treatment should not be used.
+- Follow-up instructions.
+
+When several plausible treatments exist, compare their effectiveness, cost, safety, availability, and ease of application.
+
+Recommend the option that best balances these factors for the particular plant and problem.
+
+Explain why it is preferable to the alternatives.
+
+Do not invent a dosage or dilution ratio. Follow applicable product labels and local requirements for commercial treatments.
+
+Where the evidence for a homemade remedy is weak, say so.
+
+If the problem cannot be diagnosed reliably, prioritize verification and low-risk measures instead of recommending unnecessary treatment.
+
+---
+
+# 11. TREATMENT APPLICATION AND RECORDING
+
+Separate the treatment that the application recommends from the treatment the user actually applies.
+
+Users must be able to confirm, modify, or decline a recommendation.
+
+When a user records a treatment, capture:
+
+- Plant identifier.
+- Treatment identifier.
+- Application date and time.
+- Product or ingredients.
+- Actual quantity applied.
+- Dilution or preparation details.
+- Application method.
+- Reason for treatment.
+- Cost where known.
+- User notes.
+- Supporting photograph where appropriate.
+- Expected follow-up date.
+
+Do not automatically mark a treatment as applied merely because it was recommended.
+
+Allow users to record partial applications, skipped treatments, or changes made during application.
+
+Keep a dated history of treatment changes and outcomes.
+
+---
+
+# 12. FOLLOW-UP AND ACTUAL PLANT RECOVERY
+
+Shrushtitva must monitor what happens after treatment.
+
+For each treatment, create an appropriate follow-up schedule.
+
+At follow-up, ask the user to:
+
+- Upload new photographs.
+- Describe current symptoms.
+- Report any new symptoms.
+- Confirm whether the treatment was applied.
+- Record the amount actually used.
+- Describe relevant environmental changes.
+- Add observations about growth or recovery.
+
+Compare the new information against the original assessment and treatment baseline.
+
+Classify the result as:
+
+- Improving.
+- Unchanged.
+- Worsening.
+- Inconclusive.
+
+Explain the basis for the classification.
+
+Use photographs and observations from comparable dates and angles when available.
+
+If the plant is not improving, reassess the possible cause, treatment suitability, and application history.
+
+Do not repeatedly recommend the same treatment without considering why it may have failed.
+
+Do not invent recovery percentages or claim a treatment succeeded without supporting observations.
+
+---
+
+# 13. PLANT PHOTOGRAPHS AND PROGRESS TIMELINE
+
+Provide a photo timeline for each plant.
+
+Users should be able to:
+
+- Upload photographs.
+- Capture photographs using a supported device camera.
+- Associate photographs with an assessment.
+- Associate photographs with a treatment follow-up.
+- Add captions and observations.
+- Compare photographs from different dates.
+- View before-and-after images side by side.
+- Remove incorrect photographs.
+- Browse the plant's chronological history.
+
+Keep original photographs available where appropriate.
+
+Record the date, associated plant, context, and relevant assessment or treatment reference.
+
+Use the timeline to help users understand whether symptoms are changing.
+
+Never silently replace actual photographs with AI-generated images.
+
+Any generated visual must be clearly identified as illustrative.
+
+---
+
+# 14. CARE LOGS, TASKS AND REMINDERS
+
+Create a personalized plant-care calendar.
+
+Support care activities such as:
+
+- Watering.
+- Fertilization.
+- Pruning.
+- Repotting.
+- Pest inspections.
+- Disease-treatment applications.
+- Treatment follow-ups.
+- Seed sowing.
+- Transplanting.
+- Flowering and fruiting observations.
+- Harvesting.
+- Seasonal care.
+- Other user-defined tasks.
+
+Users must be able to:
+
+- Mark tasks complete.
+- Skip tasks.
+- Snooze tasks.
+- Reschedule tasks.
+- Record what they actually did.
+- Add notes and quantities.
+- Review previous activities.
+
+Personalize schedules using species, growth stage, growing medium, local conditions, and recorded observations where sufficient information is available.
+
+Do not assign the same watering interval to every plant.
+
+Avoid presenting a reminder as proof that a plant actually needs water. Encourage users to check relevant conditions when appropriate.
+
+Support in-app notifications and browser notifications where available and permitted.
+
+---
+
+# 15. AI GARDENING ASSISTANT
+
+Integrate an AI gardening assistant into the application.
+
+It should answer questions using the user's authorized plant information and the relevant plant's history.
+
+Example questions:
+
+- Why are my tomato leaves turning yellow?
+- What might be causing these spots?
+- Which additional photographs would help identify this problem?
+- What is the most affordable safe treatment?
+- How should I prepare and apply the recommended remedy?
+- Did my plant improve after its last treatment?
+- Which plants need attention today?
+- Which treatments are due for follow-up?
+- What should I sow in my location this month?
+- Explain my soil-test report.
+- Compare these two plant photographs.
+
+The assistant should:
+
+- Ask useful follow-up questions.
+- Explain findings in plain language.
+- Distinguish evidence from hypotheses.
+- Reference relevant plant records.
+- Avoid mixing up plants.
+- Avoid inventing past actions or measurements.
+- Provide source references for important factual recommendations when available.
+- Suggest appropriate next actions.
+- Create tasks only after suitable user confirmation.
+- Record treatment applications only after the user confirms what was actually done.
+
+Keep the AI provider behind a secure backend.
+
+If an AI provider is unavailable, preserve access to existing records and saved guidance.
+
+Do not pretend that an unavailable AI feature has successfully processed a request.
+
+---
+
+# 16. IMAGE, VIDEO AND VOICE INPUT
+
+Support multiple ways of interacting with the application.
+
+## Image input
+
+Allow users to upload or capture:
+
+- Whole-plant photographs.
+- Close-ups of leaves.
+- Stems, flowers, fruits, and other relevant structures.
+- Multiple views.
+- Follow-up photographs.
+
+Provide previews, file validation, size limits, and clear upload errors.
+
+## Video input
+
+Where supported, accept short videos for plant assessment.
+
+Extract and analyze representative frames using a documented workflow.
+
+Explain which content was actually processed.
+
+Do not claim to have analyzed a complete video if only a few frames were examined.
+
+## Voice input and output
+
+Where supported, provide:
+
+- Voice-based questions.
+- Spoken symptom descriptions.
+- Speech-to-text.
+- Spoken assistant responses.
+- Text transcripts.
+- Language selection.
+- Recording controls.
+
+Allow users to review transcripts before using them in a diagnosis or treatment record.
+
+Request camera and microphone permissions appropriately.
+
+---
+
+# 17. LOCATION, WEATHER AND REGIONAL GARDENING
+
+Provide optional location-aware gardening support.
+
+Include:
+
+- Manual location selection.
+- Optional device geolocation.
+- Garden location settings.
+- Weather information.
+- Temperature and rainfall data.
+- Humidity where available.
+- Relevant weather alerts.
+- Regional sowing calendars.
+- Seasonal planting recommendations.
+- Weather-aware care guidance.
+
+For a user growing plants in Bengaluru, India, provide recommendations appropriate to Bengaluru's climate and seasonal conditions.
+
+Consider local planting seasons, temperature, rainfall, and species requirements.
+
+Do not assume that a plant's ideal growing conditions are identical everywhere.
+
+Do not require location access to use the main application.
+
+If a weather provider is unavailable, distinguish unavailable information from current conditions.
+
+Do not fabricate weather readings or forecasts.
+
+---
+
+# 18. MULTILINGUAL SUPPORT
+
+Provide an architecture that can support English and additional Indian languages.
+
+Prioritize languages relevant to users, including:
+
+- Kannada.
+- Hindi.
+- Telugu.
+- Tamil.
+- Malayalam.
+- Marathi.
+- Bengali.
+
+Provide a language selector.
+
+Translate navigation, common actions, form validation, care instructions, and supported assistant responses.
+
+Where supported, allow voice input and spoken output in the selected language.
+
+Use suitable fonts and localization for dates, numbers, currency, and units.
+
+Do not claim that every AI or speech feature supports every language equally.
+
+Clearly communicate unavailable translations or unsupported voice capabilities.
+
+---
+
+# 19. OPTIONAL SPECIES-SPECIFIC 3D PLANT VISUALIZATION
+
+3D visualization should enhance the plant-care experience, not dominate development priorities.
+
+For every plant added, provide an appropriate species-specific 3D representation where possible.
+
+Use:
+
+1. Curated models for supported species.
+2. A suitable generation workflow when a curated model is unavailable.
+3. A clearly labelled species-aware approximation when neither is available.
+
+Each plant must retain its own identity and model association.
+
+Where useful, display both the actual plant photograph and the 3D model.
+
+Support gentle animation and interactive viewing without excessive resource usage.
+
+A tomato should not use the same botanical shape as a Monstera or sunflower.
+
+If a model is only an approximation, label it accordingly.
+
+Do not claim that a 3D model precisely represents an individual plant unless that is genuinely supported by the reconstruction process.
+
+The 3D viewer must never replace plant diagnosis, actual photographs, treatment tracking, or other essential functions.
+
+---
+
+# 20. OFFLINE ACCESS AND SYNCHRONIZATION
+
+Design the application to remain useful when connectivity is limited.
+
+Where technically practical, allow users to:
+
+- Open previously cached plant profiles.
+- View saved photographs.
+- Read saved care recommendations.
+- Review previous diagnoses.
+- Record care activities.
+- Add observations.
+- Prepare new plant records.
+- Queue changes for synchronization.
+
+Use appropriate local storage, such as IndexedDB, for structured records and pending operations.
+
+When connectivity returns:
+
+- Synchronize queued changes.
+- Avoid duplicate records.
+- Handle conflicting edits.
+- Preserve user data.
+- Display synchronization status.
+- Retry failed operations safely.
+
+Clearly distinguish locally saved information from server-synchronized information.
+
+Do not promise offline AI diagnosis or new 3D generation unless the required models and processing are genuinely available locally.
+
+---
+
+# 21. DATABASE, FILE STORAGE AND DATA RELATIONSHIPS
+
+Use a reliable data architecture that keeps each user's records connected.
+
+The database should support:
+
+- User profiles.
+- Plant records.
+- Plant species.
+- Plant photographs.
+- Observations.
+- Diagnosis reports.
+- Diagnosis findings.
+- Soil and nutrient tests.
+- Treatment recommendations.
+- Treatment applications.
+- Care logs.
+- Care tasks.
+- Reminders.
+- Progress history.
+- Assistant conversations.
+- User preferences.
+- Optional 3D model metadata.
+- Offline synchronization records.
+
+Every plant-associated record must reference the correct plant.
+
+Every private record must belong to the appropriate user.
+
+Use migrations, indexes, validation, access controls, and consistent timestamps.
+
+Store large images, audio, video, and 3D assets in appropriate object storage instead of ordinary database rows.
+
+Use private access controls for user photographs and other sensitive files.
+
+Retain records according to a documented deletion and retention policy.
+
+---
+
+# 22. SECURITY AND PRIVACY
+
+Implement:
+
+- Secure authentication.
+- Authorization checks.
+- User-specific database access policies.
+- Private image storage.
+- File validation.
+- Upload size limits.
+- Safe API endpoints.
+- Secret management.
+- Appropriate session handling.
+- Protection against unauthorized record access.
+- Rate limiting where appropriate.
+- Safe error handling.
+- Privacy-conscious logging.
+- Account deletion.
+- Consent for optional device permissions.
+
+Never expose privileged service keys in frontend code.
+
+Do not assume that hiding a button is sufficient to protect private records.
+
+Validate all server-side operations and file uploads.
+
+Do not expose one user's plant photographs or diagnosis records to another user.
+
+---
+
+# 23. DASHBOARD AND USEFUL INSIGHTS
+
+Provide a dashboard that helps users decide what to do next.
+
+Include:
+
+- Total plants.
+- Recently added plants.
+- Recently updated plants.
+- Upcoming care tasks.
+- Overdue tasks.
+- Follow-ups due.
+- Plants with recorded symptoms.
+- Recent assessments.
+- Recent treatments.
+- Recent observations.
+- Growth milestones.
+
+Distinguish between healthy, assessed, suspected-problem, and not-yet-assessed states.
+
+Do not automatically mark a plant healthy merely because no diagnosis exists.
+
+Show useful empty states for new users.
+
+Provide quick actions for adding a plant, recording care, assessing symptoms, and opening the gardening assistant.
+
+Use real records rather than invented dashboard statistics.
+
+---
+
+# 24. TRUSTWORTHY INFORMATION AND SCIENTIFIC RESPONSIBILITY
+
+Plant-health advice must be evidence-based and appropriately qualified.
+
+Prefer reliable sources such as:
+
+- Government agricultural departments.
+- University extension services.
+- Botanical institutions.
+- Peer-reviewed research.
+- Recognized plant-health organizations.
+- Official product labels.
+
+Where practical, provide references for important treatment recommendations.
+
+Distinguish between:
+
+- Directly observed symptoms.
+- User-provided information.
+- Measured test results.
+- AI-generated hypotheses.
+- Confirmed diagnoses.
+- Illustrative model outputs.
+
+Do not fabricate sources, measurements, scientific claims, or treatment outcomes.
+
+Do not provide false precision.
+
+When uncertainty affects treatment safety or effectiveness, explain it clearly and recommend suitable verification.
+
+---
+
+# 25. COST AND FREE-FIRST DEVELOPMENT
+
+The application should prefer genuinely free and open-source options wherever practical.
+
+Evaluate available free tiers for:
+
+- Hosting.
+- Database.
+- Authentication.
+- Object storage.
+- AI inference.
+- Image analysis.
+- Speech processing.
+- Weather services.
+- 3D asset generation.
+
+For each external dependency, document:
+
+- Its purpose.
+- Whether it is essential or optional.
+- Free-tier limits.
+- Payment requirements.
+- Usage restrictions.
+- What happens when limits are reached.
+- Available alternatives.
+
+Do not promise unlimited free AI processing or 3D generation without evidence.
+
+Keep optional providers replaceable so the application can evolve without a complete rewrite.
+
+Essential plant-management features should remain usable even when optional AI or external services are unavailable.
+
+---
+
+# 26. USER INTERFACE AND EXPERIENCE
+
+Use a polished, nature-inspired design with a distinctive visual identity.
+
+Preferred colors include:
+
+- Deep plum.
+- Aubergine.
+- Pink.
+- Rose.
+- Peach.
+- Lavender.
+- Soft cream.
+- Natural botanical colors.
+
+The interface should feel modern, immersive, elegant, and easy to navigate.
+
+Use animation purposefully, not excessively.
+
+Provide:
+
+- Responsive layouts.
+- Readable typography.
+- Clear navigation.
+- Accessible forms.
+- Useful progress indicators.
+- Loading, error, and empty states.
+- Consistent buttons and dialogs.
+- Keyboard navigation.
+- Screen-reader labels.
+- Reduced-motion support.
+
+The application must work on mobile phones, tablets, laptops, and desktop computers.
+
+Do not prioritize visual effects over reliability or usability.
+
+---
+
+# 27. IMPLEMENTATION REQUIREMENTS
+
+If an existing codebase is available, inspect it before making changes.
+
+Preserve working features, existing project identity, and useful components.
+
+Do not replace the entire project unnecessarily.
+
+If no codebase exists, propose a suitable technology stack and explain important architectural choices before implementing it.
+
+Build the application in stages:
+
+**Stage 1:** Repository assessment, authentication, and stable project setup.
+
+**Stage 2:** My Garden, plant profiles, and persistent records.
+
+**Stage 3:** Plant photographs, observations, and health assessments.
+
+**Stage 4:** Disease and pest identification, nutrient analysis, and treatment recommendations.
+
+**Stage 5:** Treatment applications, care logs, follow-ups, and progress comparison.
+
+**Stage 6:** Care reminders and calendar.
+
+**Stage 7:** AI gardening assistant and supported media input.
+
+**Stage 8:** Location, weather, and multilingual features.
+
+**Stage 9:** Offline access and synchronization.
+
+**Stage 10:** Optional species-specific 3D visualization and additional enhancements.
+
+**Stage 11:** Testing, security review, deployment, and documentation.
+
+Implement and test each stage before moving to the next.
+
+Keep the application runnable throughout development.
+
+---
+
+# 28. TESTING AND COMPLETION CRITERIA
+
+Test the real functionality, not just the appearance.
+
+Verify that:
+
+- Users can sign up, sign in, and sign out.
+- Users can manage multiple plants.
+- Plant records persist across refreshes and sessions.
+- Plant photographs remain associated with the correct plant.
+- Health assessments create persistent records.
+- Diagnoses communicate uncertainty.
+- Nutrient values are not invented.
+- Treatment instructions include appropriate safety information.
+- Recommendations are distinct from treatments actually applied.
+- Care logs record actual activities.
+- Follow-ups compare new observations with previous evidence.
+- Deteriorating plants can be reassessed.
+- Reminders behave correctly.
+- The assistant uses the correct plant's authorized history.
+- User records remain private.
+- Offline changes synchronize safely where supported.
+- The interface works on mobile and desktop.
+- Optional services fail gracefully.
+- The 3D feature does not prevent core functionality from working.
+
+Do not claim a feature is implemented, integrated, or tested when it is only a mockup or placeholder.
+
+Document unresolved issues and external dependencies.
+
+---
+
+# 29. REQUIRED DELIVERABLES
+
+Provide:
+
+1. A working application.
+2. A clear explanation of its architecture.
+3. A description of implemented features.
+4. Database schema and migrations where applicable.
+5. Authentication and security configuration instructions.
+6. Environment-variable documentation.
+7. Setup instructions.
+8. Instructions for running the application locally.
+9. Deployment instructions.
+10. A list of external services and their actual costs or limitations.
+11. A test report describing what was actually tested.
+12. A list of unfinished features and required external dependencies.
+13. A prioritized plan for the next development phase.
+
+---
+
+# 30. FINAL PRODUCT REQUIREMENT
+
+Shrushtitva must be a complete plant-care companion, not merely a plant identifier, AI chatbot, 3D visualization, or static gardening website.
+
+Its central responsibility is to help users understand their plants, investigate potential health problems, identify plausible causes, choose affordable and safe treatments, record what they actually do, and monitor whether their plants improve.
+
+Every plant should have a persistent individual history. Every recommendation should be appropriate to the available evidence. Every treatment should be traceable. Every reported outcome should be based on actual observations.
+
+Build the application around this complete plant-care cycle.
+
+Begin by inspecting the available project, identifying the existing functionality, and creating a prioritized implementation plan. Then implement the application incrementally, test the results, preserve working features, and clearly disclose any limitations or dependencies.
+
+**The final goal is simple: help people make better decisions about their plants and give them a reliable way to care for those plants over time.**
